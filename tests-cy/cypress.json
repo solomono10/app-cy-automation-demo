@@ -1,1 +1,13 @@
-{}
+{
+  "projectId": "",
+  "ignoreTestFiles": "*.js",
+  "baseUrl": "http://localhost:3005/",
+  "testFiles": "**/*.feature",
+  "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+    "overwrite": "false",
+    "html": "false",
+    "json": "true"
+  },
+  "sreenshotsFolder": "TestReport/assets"
+}
