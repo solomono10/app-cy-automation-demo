@@ -26,3 +26,35 @@ Open `automation-demo` project
 docker-compose build
 docker-compose up
 ```
+
+# Cypress tests
+
+## Purpose
+These tests will run against the App.
+
+The App must be running for these tests to run.
+
+## Run tests
+You can run these tests either of two ways.
+
+The tests will run on `http://localhost:3005/`
+
+## Using the Cypress Open (Will open chrome browser)
+Open `automation-demo` project
+
+```bash
+cd tests-cy
+npm i
+npm run open
+```
+
+* Node and NPM are required
+
+## Using Cypress run
+Open `automation-demo` project
+
+```bash
+cd tests-cy
+npm i
+npm run test
+```
