@@ -1,0 +1,50 @@
+{
+  "name": "tests-cy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "clean:reports": "rm -rf mochawesome-report/",
+    "test": "npm run clean:reports && npx cypress run",
+    "open": "npx cypress open",
+    "merge:reports": "mochawesome-merge mochawesome-report/*json > cypress-tests-report.json",
+    "create:html:report": "marge --reportDir TestReport cypress-tests-report.json",
+    "generate:html:report": "npm run merge:reports && npm run create:html:report"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "BDD",
+    "mochawesome",
+    "testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Solomon Omowuni",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cypress": "^5.5.0",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-image-snapshot": "^3.1.1",
+    "cypress-plugin-tab": "^1.0.5",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0",
+    "prettier": "^2.0.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
