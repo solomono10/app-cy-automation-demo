@@ -12,3 +12,17 @@
 
 # Output of 'npm pack'
 *.tgz
+
+# Logs/Reports
+*/TestReport/
+*/cypress-test-report.json
+*/cypress-tests-report.json
+*/mochawesome-report/
+
+# Screenshots
+*.png
+!**/snapshots/**/*.png
+
+# Videos
+*.mp4
+
