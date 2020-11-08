@@ -1,4 +1,4 @@
-Feature: Solomon's Account Registration App
+Feature: Account Registration
 
   Scenario Outline: As a user, I can register an account
 
@@ -8,7 +8,7 @@ Feature: Solomon's Account Registration App
 
     Examples:
       | firstName | lastName | email            | message         |
-      | Solomon   | Omowuni  | solomon@test.com | Welcome Solomon |
+      | Solomon   | Omowuni  | solomon@test.com | Welcome Solomon! |
 
   Scenario Outline: As a user, I can request a catalogue
 
